@@ -1,0 +1,23 @@
+import time
+print("Koni yardımcı programı... ")
+
+pi = 3.14
+
+h = int(input("lütfen yüksekliği giriniz :"))
+r = int(input("lütfen yarıçapı giriniz :"))
+print("yüzey kesiti hesaplama için 'Y' basın : ")
+cv = input(" : ")
+if cv == "Y" or cv == "y":
+
+    A = pi*r*(r + (h**2 + r**2)**0.5)
+    print("yüzey kesiti hesaplanıyor...")
+    time.sleep(2)
+    print("Yüzey alanı : ",int(A))
+
+print("hacim hesaplamak için 'H' ye basın ")
+hc = input(" : ")
+if hc == "H" or hc == "h":
+    V = pi*(r**2*(h/3))
+    print("hacim hesaplanıyor...")
+    time.sleep(2)
+    print("hacim : ",int(V))
